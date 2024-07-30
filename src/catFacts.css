@@ -1,0 +1,101 @@
+.cat-fact-container {
+    text-align: center;
+    background-image: url('./cat-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 60px 20px;
+}
+
+.cat-fact-container img.title {
+    width: 50%;
+    transition: transform 0.3s ease;
+}
+
+.cat-fact-container img.title:hover {
+    transform: scale(1.05);
+    cursor: pointer; 
+}
+
+.cat-fact-container p {
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #827767;
+    padding: 20px 150px;
+}
+
+.cat-fact-container button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    background-color: #827767;
+    font-size: 1.6rem;
+    border-radius: 4rem;
+    color: #fbf4e4;
+    border: 4px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cat-fact-container button:hover {
+    transform: scale(1.05);
+    background: #fbf4e4;
+    color: #827767;
+    border: 4px solid #827767;
+    filter: drop-shadow(0 0 15px #827767);
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: #827767;
+    margin: 20px auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .cat-fact-container {
+        padding: 0 20px;
+    }
+    .cat-fact-container img.title {
+        width: 100%; 
+    }
+
+    .cat-fact-container p {
+        font-size: 1.3rem; 
+        padding: 20px; 
+    }
+
+    .cat-fact-container button {
+        padding: 0.7rem 1.2rem;
+        font-size: 1.1rem; 
+        margin-top: 0;
+        border: 2px solid transparent;
+    }
+
+    .cat-fact-container button:hover {
+        border: 2px solid #827767;
+    }
+}
+
