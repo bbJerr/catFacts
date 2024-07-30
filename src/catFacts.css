@@ -1,6 +1,6 @@
 .cat-fact-container {
     text-align: center;
-    background-image: url('./cat-bg.png');
+    background-image: url('/cat-bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
